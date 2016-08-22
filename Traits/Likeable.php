@@ -45,12 +45,12 @@ trait Likeable
 
     protected function saveToOwnTable()
     {
-        return property_exists($this, 'likes') ? $this->likes['saveToOwnTable'] : false;
+        return property_exists($this, 'likeSettings') ? $this->likeSettings['saveToOwnTable'] : false;
     }
 
     protected function likesTableName()
     {
-        return property_exists($this, 'likes') ? $this->likes['likesTableName'] : 'likes';
+        return property_exists($this, 'likeSettings') ? $this->likeSettings['likesTableName'] : 'likes';
     }
 
 }

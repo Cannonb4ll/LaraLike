@@ -34,7 +34,7 @@ use App\Traits\Likeable;
 There are currently 2 settings:
 
 ```
-protected $likes = [
+protected $likeSettings = [
     'saveToOwnTable' => true,
     'likesTableName' => 'likes'
 ];
